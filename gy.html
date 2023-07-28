@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shreyas fitness</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+            background: url(htmlim.jpg);
+            color: white;
+            background-repeat: no-repeat;
+            background-size: 100%;
+            
+        }
+
+        .left{
+            display: inline-block;
+            /* border: 2px solid red; */
+            position: absolute;
+            left: 34px;
+            text-align: center;
+            top: 50px ;
+            width: 100px;
+            transition: all 1s;
+        }
+        .middle{
+            margin: 50px auto;
+            width: 50%;
+            display: block;
+            /* border: 2px solid green; */
+        }
+        .right{
+            position: absolute;
+            right: 34px;
+            top: 50px ;
+            display: inline-block;
+            /* border: 2px solid yellow; */
+            
+        }
+        .navbar{
+            display: inline-block;
+        }
+        .navbar li{
+            font-size: 25px;
+            display: inline-block;
+
+        }
+        .navbar li a{
+            color: aliceblue;
+            text-decoration: none;
+            padding: 34px 23px;
+        }
+        .navbar li a:hover, .navbar li a.active{
+            text-decoration:solid;
+            cursor:pointer;
+            color:rgb(253, 176, 176);
+            transition: all 10ms;
+            font-size:  25px;
+            text-shadow: 4px 4px 5px red;
+        }
+        .left img{
+            transition: all 1s;
+            width: 60%;
+            /* align-items: center; */
+            
+        }
+        .left:hover{
+            
+            width:300px;
+            font-size: 40px;
+            box-shadow: 4px 4px 5px wheat ;
+        }
+        .left div{
+            text-align: center;
+        }
+        .btn{
+            margin: 0px 9px;
+            color: white;
+            background-color: black;
+            padding: 4px 14px; 
+            border: 2px solid grey;
+            border-radius: 10px;
+           font-size: 30px;
+           cursor: pointer;
+            
+            }
+        /*  */
+         
+        
+        .btn:hover{
+            background-color: cadetblue;
+            box-shadow: 4px 4px 6px 4px wheat;
+            
+        }
+
+        .container{
+            border: 6px solid green;
+            margin: 140px 107px;
+            padding: 46px 61px;
+            width: 33%;
+            border-radius: 25px;
+            border-color: aliceblue;
+            position: absolute;
+            right: 1px;
+            box-shadow: 2px 2px violet;
+            display: block;
+        }
+        .form-group input{
+            text-align: center;
+            width:350px;
+            display: block;
+            padding: 1px;
+            margin: 11px auto;
+            font-size: 35px;
+            border: 2px solid black;
+            border-radius: 5px;
+
+
+        }
+        .container h1{
+            text-align: center;
+
+        }
+        .container button{
+            display: block;
+            width: 50%;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    
+    <header class="header">
+        <!-- lext box for logo -->
+        <div class="left">
+            <img src="gym.png" alt=""> 
+            <div>shreyas fitness</div>
+
+        </div>
+        <!-- middle box for navigations -->
+     
+        <div class="middle">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">gymcalculator</a></li>
+                <li><a href="#">Contact us</a></li>
+                
+            </ul>
+        </div>
+        <!-- right box for buttons -->
+        <div class="right">
+            <button class="btn">call us</button>
+            <button class="btn">Email us</button>
+
+        </div>
+    </header>
+    <div class="container">
+        <h1>join the best gym in kolhapur now</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="enter your name">
+            </div>
+             <div class="form-group">
+                <input type="text" name="" placeholder="enter your age">
+            </div>
+             <div class="form-group">
+                <input type="text" name="" placeholder="enter your gender">
+            </div>
+             <div class="form-group">
+                <input type="text" name="" placeholder="enter your locality"> 
+            </div>
+            <button class="btn">submit</button>
+        </form>
+    </div>
+   
+    
+</body>
+</html>
